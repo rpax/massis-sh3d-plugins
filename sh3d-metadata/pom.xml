@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>rpax.massis.sweethome3d</groupId>
-    <artifactId>sh3d-additionaldata-app</artifactId>
+    <artifactId>sh3d-metadata</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>sh3d-additionaldata-app</name>
+    <name>sh3d-metadata</name>
     <parent>
         <groupId>rpax.massis.sweethome3d</groupId>
         <artifactId>sh3d-plugins-parent</artifactId>
@@ -26,12 +26,14 @@
             <version>5.0</version>
         </dependency>
         <dependency>
-            <groupId>rpax.massis</groupId>
-            <artifactId>java3d-natives</artifactId>
+            <groupId>rpax.massis.sweethome3d</groupId>
+            <artifactId>sh3d-additionaldata-app</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>io.gsonfire</groupId>
+            <artifactId>gson-fire</artifactId>
+            <version>1.0.1</version>
+        </dependency>
     </dependencies>
-
-    <build>
-    </build>
 </project>
