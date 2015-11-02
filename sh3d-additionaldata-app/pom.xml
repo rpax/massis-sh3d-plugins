@@ -7,18 +7,12 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>sh3d-additionaldata-app</name>
-    <repositories>
-        <repository>
-            <id>nexus-massisframework</id>
-            <name>nexus-massisframework repository</name>
-            <url>http://nexus-massisframework.rhcloud.com/nexus/content/groups/public</url>
-        </repository>
-    </repositories>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
-    </properties>
+    <parent>
+        <groupId>com.massisframework.sweethome3d</groupId>
+        <artifactId>massis-sh3d-plugins</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../massis-sh3d-plugins</relativePath>
+    </parent>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
