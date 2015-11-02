@@ -35,7 +35,7 @@ public class BuildingMetadataPluginAction extends PluginAction {
 
     public BuildingMetadataPluginAction(final BuildingMetadataPlugin plugin)
     {
-        super("rpax.massis.sweethome3d.plugins.metadata.ApplicationPlugin",
+        super(BuildingMetadataPluginAction.class.getPackage().getName()+".ApplicationPlugin",
                 BuildingMetadataPluginAction.class.getName(),
                 plugin.getPluginClassLoader(), true);
         putPropertyValue(Property.MENU, "Tools");
