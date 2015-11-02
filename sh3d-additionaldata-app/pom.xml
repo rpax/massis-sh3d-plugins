@@ -2,17 +2,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>rpax.massis.sweethome3d</groupId>
+    <groupId>com.massisframework.sweethome3d</groupId>
     <artifactId>sh3d-additionaldata-app</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>sh3d-additionaldata-app</name>
-    <parent>
-        <groupId>rpax.massis.sweethome3d</groupId>
-        <artifactId>sh3d-plugins-parent</artifactId>
-        <relativePath>../sh3d-plugins-parent</relativePath>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
+    <repositories>
+        <repository>
+            <id>nexus-massisframework</id>
+            <name>nexus-massisframework repository</name>
+            <url>http://nexus-massisframework.rhcloud.com/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -21,17 +27,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>rpax.massis</groupId>
-            <artifactId>massis-sweethome3d</artifactId>
-            <version>5.0</version>
-        </dependency>
-        <dependency>
-            <groupId>rpax.massis</groupId>
-            <artifactId>java3d-natives</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.eteks</groupId>
+            <artifactId>sweethome3d</artifactId>
+            <version>5.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
-    <build>
-    </build>
 </project>

@@ -2,21 +2,28 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>rpax.massis.sweethome3d</groupId>
+    <groupId>com.massisframework.sweethome3d</groupId>
     <artifactId>sh3d-metadata-plugin</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>sh3d-metadata-plugin</name>
-    <parent>
-        <groupId>rpax.massis.sweethome3d</groupId>
-        <artifactId>sh3d-plugins-parent</artifactId>
-        <relativePath>../sh3d-plugins-parent</relativePath>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
+    <repositories>
+        <repository>
+            <id>nexus-massisframework</id>
+            <name>nexus-massisframework repository</name>
+            <url>http://nexus-massisframework.rhcloud.com/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://nexus-massisframework.rhcloud.com/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.5</maven.compiler.source>
-        <maven.compiler.target>1.5</maven.compiler.target>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
     <build>
         <resources>
@@ -27,30 +34,6 @@
                 </excludes>
             </resource>
         </resources>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.6</version>
-                <executions>
-                    <execution>
-                        <id>copyplugin</id>
-                        <phase>install</phase>
-                        <configuration>
-                            <tasks>
-                                <echo message="Renaming plugin" />
-                                <copy file="${project.build.directory}/${project.artifactId}-${project.version}.jar"
-                                      tofile="${project.build.directory}/${project.artifactId}.sh3p">
-                                </copy>
-                            </tasks>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
     </build>
     <dependencies>
         <dependency>
@@ -60,12 +43,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>rpax.massis</groupId>
-            <artifactId>massis-sweethome3d</artifactId>
-            <version>5.0</version>
-        </dependency>
-        <dependency>
-            <groupId>rpax.massis.sweethome3d</groupId>
+            <groupId>com.massisframework.sweethome3d</groupId>
             <artifactId>sh3d-metadata</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
