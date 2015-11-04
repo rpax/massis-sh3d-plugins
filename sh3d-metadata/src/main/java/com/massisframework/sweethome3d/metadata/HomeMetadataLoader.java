@@ -106,7 +106,6 @@ public class HomeMetadataLoader implements AdditionalDataReader, AdditionalDataW
                                 metadata));
                     }
                 }
-                System.err.println("Metadata is present. Home: " + home);
             } else
             {
                 managers.put(homeUUID, new BuildingMetadataManager(home));
@@ -152,9 +151,7 @@ public class HomeMetadataLoader implements AdditionalDataReader, AdditionalDataW
             homeUUID = UUID.randomUUID().toString();
             home.setVisualProperty(HOME_UUID_KEY, homeUUID);
             managers.put(homeUUID, new BuildingMetadataManager(home));
-            System.err.println("Added manager for home with id " + homeUUID);
         }
-        System.err.println("Retrieving manager for home with id " + homeUUID);
         return managers.get(homeUUID);
 
     }
