@@ -10,13 +10,13 @@
         <repository>
             <id>nexus-massisframework</id>
             <name>nexus-massisframework repository</name>
-            <url>http://nexus-massisframework.rhcloud.com/nexus/content/groups/public</url>
+            <url>http://mvn.massisframework.com/nexus/content/groups/public</url>
         </repository>
     </repositories>
     <distributionManagement>
         <snapshotRepository>
             <id>snapshots</id>
-            <url>http://nexus-massisframework.rhcloud.com/nexus/content/repositories/snapshots</url>
+            <url>http://mvn.massisframework.com/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
     <properties>
