@@ -5,4 +5,8 @@ sh3d-metadata/nbactions.xml
 /sh3d-metadata-plugin/target/
 sh3d-metadata-plugin/nbactions.xml
 /java3d-natives/target/
-/*/.project
+/**/.project
+/**/target
+/**/.classpath
+/**/.project
+/**/.settings
