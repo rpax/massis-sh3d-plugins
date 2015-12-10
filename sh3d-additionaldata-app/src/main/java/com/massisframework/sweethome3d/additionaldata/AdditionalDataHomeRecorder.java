@@ -4,17 +4,17 @@
  */
 package com.massisframework.sweethome3d.additionaldata;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import com.eteks.sweethome3d.io.HomeFileRecorder;
 import com.eteks.sweethome3d.model.Home;
 import com.eteks.sweethome3d.model.HomeApplication;
 import com.eteks.sweethome3d.model.RecorderException;
 import com.eteks.sweethome3d.model.UserPreferences;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 /**
  *
@@ -126,13 +126,13 @@ public class AdditionalDataHomeRecorder extends HomeFileRecorder {
     public void writeHome(Home home, String name) throws RecorderException
     {
         super.writeHome(home, name);
-        File homeFile = new File(name);
-        for (AdditionalDataWriter additionalDataWriter : this.additionalDataWriters)
+        final File homeFile = new File(name);
+        for (final AdditionalDataWriter additionalDataWriter : this.additionalDataWriters)
         {
             try
             {
                 additionalDataWriter.writeAdditionalData(home, homeFile);
-            } catch (IOException ex)
+            } catch (final IOException ex)
             {
                 throw new RecorderException("Failed to write additional data.",
                         ex);
@@ -146,17 +146,17 @@ public class AdditionalDataHomeRecorder extends HomeFileRecorder {
     {
 
         //restore metadata from home
-        Home home = super.readHome(name);
+        final Home home = super.readHome(name);
         final File homeFile = new File(name);
         try
         {
-            for (AdditionalDataReader additionalDataReader : additionalDataReaders)
+            for (final AdditionalDataReader additionalDataReader : this.additionalDataReaders)
             {
                 additionalDataReader.readAdditionalData(this.application, home,
                         homeFile);
             }
             return home;
-        } catch (IOException ex)
+        } catch (final IOException ex)
         {
             throw new RecorderException("Error when loading additional data", ex);
         }
