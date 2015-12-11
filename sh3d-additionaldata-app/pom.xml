@@ -2,10 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.massisframework.sweethome3d</groupId>
-    <artifactId>sh3d-additionaldata-app</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    
     <name>sh3d-additionaldata-app</name>
     <parent>
         <groupId>com.massisframework.sweethome3d</groupId>
@@ -13,6 +10,8 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../massis-sh3d-plugins</relativePath>
     </parent>
+    <artifactId>sh3d-additionaldata-app</artifactId>
+    <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
