@@ -60,13 +60,6 @@
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
-	<repositories>
-		<repository>
-			<id>ossrh-releases</id>
-			<name>ossrh-releases</name>
-			<url>https://oss.sonatype.org/content/repositories/releases/</url>
-		</repository>
-	</repositories>
 	<build>
 		<resources>
 			<resource>
