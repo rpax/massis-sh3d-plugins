@@ -1,27 +1,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
-    
-    <name>sh3d-additionaldata-app</name>
-    <parent>
-        <groupId>com.massisframework.sweethome3d</groupId>
-        <artifactId>massis-sh3d-plugins</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
-    <artifactId>sh3d-additionaldata-app</artifactId>
-    <packaging>jar</packaging>
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.eteks</groupId>
-            <artifactId>sweethome3d</artifactId>
-            <version>5.1</version>
-        </dependency>
-    </dependencies>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.massisframework.sweethome3d</groupId>
+		<artifactId>massis-sh3d-plugins</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>sh3d-additionaldata-app</artifactId>
+	<packaging>jar</packaging>
+	<name>sh3d-additionaldata-app</name>
+	<url>www.massisframework.com</url>
+	<description>
+		Extension of the SweetHome3D application for loading and saving extra data in the home
+	</description>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.massisframework</groupId>
+			<artifactId>sweethome3d</artifactId>
+			<version>5.1.7</version>
+		</dependency>
+	</dependencies>
 </project>
