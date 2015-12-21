@@ -3,7 +3,7 @@
 
 	<groupId>com.massisframework.sweethome3d</groupId>
 	<artifactId>massis-sh3d-plugins</artifactId>
-	<version>1.1</version>
+	<version>1.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>massis-sh3d-plugins</name>
