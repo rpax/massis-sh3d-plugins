@@ -25,9 +25,9 @@
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
     <modules>
-        <module>../sh3d-additionaldata-app</module>
-        <module>../sh3d-metadata</module>
-        <module>../sh3d-metadata-plugin</module>
+        <module>sh3d-additionaldata-app</module>
+        <module>sh3d-metadata</module>
+        <module>sh3d-metadata-plugin</module>
     </modules>
     <build>
         <plugins> 

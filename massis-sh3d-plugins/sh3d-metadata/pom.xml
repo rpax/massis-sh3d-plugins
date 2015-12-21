@@ -8,7 +8,6 @@
         <groupId>com.massisframework.sweethome3d</groupId>
         <artifactId>massis-sh3d-plugins</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../massis-sh3d-plugins</relativePath>
     </parent>
     <build>
         <resources>
